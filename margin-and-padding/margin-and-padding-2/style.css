@@ -7,21 +7,35 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  margin: 8px;
+  padding: 8px;
+  font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  margin: 8px;
+  padding: 16px 8px;
 }
+/*There was a little confusion on what the content meant but now I understand. They literally meant the content of the element. Not the content of the boxes. It's a little hard to distinguish the picture and your own creation but I managed. */
 
 .button-container {
   background: #e3f4ff;
+  margin: 8px;
+  padding: 8px;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  padding: 8px 24px;
+  margin: auto;
+  /*the lesson I learned about aligning last lesson helped out here. Yay! Using auto with margins aligns the text in a manner relative to the command. Margin auto aligns it all perfectly center. Whereas margin left automatically aligns it to the left side. Pretty cool lesson to learn and not have to fiddle with doing pixel adjustments. */
 }
