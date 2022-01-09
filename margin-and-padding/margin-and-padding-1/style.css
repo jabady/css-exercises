@@ -25,4 +25,6 @@ body {
   /* CHANGE ME */
   padding: 32px;
   margin-left: auto;
+  /*Didn't realize I could use auto to align text to the right, how does this work exactly? 
+  Looked into it and apparently if you do a margin auto it will horizontally center the element relative to the page. If you do width of the element it will prevent the contents from stretching to the edges of a page. Auto on the width makes it automatically take up whatever width the page has. */
 }
