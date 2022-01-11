@@ -3,6 +3,11 @@
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+  display: flex;
+    /* It took me a while to realize I needed to add display: flex; to get things working. What a big mistake! Never again! */
+  /* justify-content: center;
+  align-items: center; */
+  /* delete the comments above this one to make it work without using margin: auto; */
 }
 
 .box {
@@ -12,4 +17,6 @@
   border: 6px solid maroon;
   width: 80px;
   height: 80px;
+  margin: auto;
+  /* I know using justify-content: center; and align-items: center; would work, but I thought this neat little shortcut shown through css-tricks.com was cool to use. */
 }
