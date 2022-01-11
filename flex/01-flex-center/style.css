@@ -19,4 +19,7 @@
   height: 80px;
   margin: auto;
   /* I know using justify-content: center; and align-items: center; would work, but I thought this neat little shortcut shown through css-tricks.com was cool to use. */
+  display: flex;
+  align-items: center;
+  /* I wanted to center the text as well haha */
 }
