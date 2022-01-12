@@ -1,6 +1,8 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -9,11 +11,15 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  align-self: center;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  padding: 4px;
+  /* padding line for unorganized lists got me really hard. I thought I was doing everything wrong. */
 }
 
 a {
@@ -22,4 +28,7 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+  display: flex;
+  /* why is the display flex line so crucial for lining things up in the end? */
+  margin: 4px;
 }
