@@ -12,6 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  /* why does this fix the button and prevent it from filling up? It is related to flex boxes but I don't understand it yet. */
 }
 
 .profile-image {
@@ -20,6 +23,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height:  48px;
+  margin: 8px;
 }
 
 .logo {
@@ -27,6 +31,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin: 8px;
 }
 
 button {
@@ -35,14 +40,22 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  /* I noticed the button fills up the space vertically to it when there is no align-items: center; command put onto it, why? I tried to quick fix it with using flex: 0 but that did nothing. Is there a special condition about buttons? Changing padding also did not work.  */
+  margin: 8px;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 8px;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  padding: 0px;
+  /* this padding on lists keeps getting me, I remembered from the previous exercise but still why do lists have an arbitrary amount of padding to them? */
 }
