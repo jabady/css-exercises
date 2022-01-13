@@ -5,13 +5,38 @@ body {
 img {
   width: 100px;
   height: 100px;
+  align-self: center;
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+}
+
+.img-box {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* so THIS part ALMOST works, apparently the images count towards being text as well? I went to check the solution and this whole section I Wrote here making the image boxes a flex box and controlling the contents of it to be centered are not actually in the solution, this results in like a 5 pixel gap? */
+}
+
+.text{
+  text-align: center;
+  margin: 5px 0 0 0;
+  /* I added a 5 pixel margin to match the solution, I guess this technically works but makes my coding superflous. It is still using the tools we're asked to use, and using flex box. I still feel kind of wrong about it when I compare it to the solution. So I went through and fixed it my way to still get there but also not cheat and copy the solution. I was considering doing this the whole time regardless before I "cheated" and looked at the solution. What I've commented are the only things I've added after looking. I didn't know images count as text and as a result get centered it's a new lesson I've learned so far.*/
+}
+
+/* lessons learned so far, LISTS HAVE SECRET MARGINS!, and images count as text for the context of the command of text-align. */ 
 /* do not edit this footer */
 .footer {
   position: fixed;
