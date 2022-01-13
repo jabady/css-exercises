@@ -36,7 +36,7 @@ img {
   /* I added a 5 pixel margin to match the solution, I guess this technically works but makes my coding superflous. It is still using the tools we're asked to use, and using flex box. I still feel kind of wrong about it when I compare it to the solution. So I went through and fixed it my way to still get there but also not cheat and copy the solution. I was considering doing this the whole time regardless before I "cheated" and looked at the solution. What I've commented are the only things I've added after looking. I didn't know images count as text and as a result get centered it's a new lesson I've learned so far.*/
 }
 
-/* lessons learned so far, LISTS HAVE SECRET MARGINS!, and images count as text for the context of the command of text-align. */ 
+/* lessons learned so far, LISTS HAVE SECRET MARGINS!, and images count as text for the context of the command of text-align. Go over differents between align-content (only works on flex wrapping containers), align-items (works on aligning objects in container), and align-self (only usable within an item not on the container) again. */ 
 /* do not edit this footer */
 .footer {
   position: fixed;
